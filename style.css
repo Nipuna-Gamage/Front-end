@@ -12,18 +12,12 @@
 ::-webkit-scrollbar {
     width: 10px;
 }
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
 ::-webkit-scrollbar-thumb {
     background: #6B3CC9;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: #6B3CC9;
-}
 /* navbar styling */
 nav{
   position: fixed;
@@ -98,17 +92,6 @@ nav .menu-btn{
   flex-direction: column;
   justify-content: center;
 }
-.home .text-two{
-  color: #0E2431;
-  font-size: 75px;
-  font-weight: 600;
-  margin-left: -3px;
-}
-.home .text-three{
-  font-size: 40px;
-  margin: 5px 0;
-  color: #4070f4;
-}
 .home .button{
   margin: 14px 0;
 }
@@ -130,9 +113,6 @@ nav .menu-btn{
   color: #4070f4;
 }
 
-section{
-  padding-top: 40px;
-}
 section .content{
   width: 80%;
   margin: 40px auto;
@@ -143,11 +123,7 @@ section .content{
   justify-content: space-between;
   align-items: center;
 }
-section .title{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
+
 section .title span{
   font-size: 30px;
   font-weight: 600;
@@ -203,74 +179,9 @@ section .button button:hover{
   color: #4070f4;
 }
 
- /* My contact CSS */
- .contact{
-   background: #F0F8FF;
- }
- .contact .content{
-   padding: 40px 0;
- }
- .contact .contact-details{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
- }
- .contact-details .text{
-   width: 50%;
- }
- .contact-details p{
-   color: #0E2431;
-   text-align: justify;
- }
-.contact .contact-details .experience{
-  display: flex;
-  align-items: center;
-  margin: 0 10px;
-}
-.contact-details .experience .num{
-  color: #0E2431;
-  font-size: 80px;
-}
-.contact-details .experience .exp{
-  color: #0E2431;
-  margin-left: 20px;
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0 6px;
-}
-.contact-details .boxes{
-  width: 45%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.contact-details .box{
-  width: calc(100% / 2 - 20px);
-  margin: 20px 0;
-}
-.contact-details .boxes .topic{
-  font-size: 20px;
-  color: #4070f4;
-}
-.contact-details .boxes .per{
-  font-size: 60px;
-  color: #4070f4;
-}
+/* My contact CSS */
 
-/* Scroll TO Top Button CSS */
-.scroll-button a{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  color: #fff;
-  background: #4070f4;
-  padding: 7px 12px;;
-  font-size: 18px;
-  border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.15);
-  display: none;
-}
-
+/* footer CSS */
 .site-footer
 {
   background-color:#6B3CC9;
@@ -361,6 +272,7 @@ section .button button:hover{
   }
   nav .navbar .menu{
     position: fixed;
+    left: 100%;
     top: 0;
     background: #FFF;
     height: 100vh;
@@ -389,12 +301,6 @@ section .button button:hover{
   .navbar .menu .cancel-btn{
     display: block;
   }
-  .home .text-two{
-    font-size: 65px;
-  }
-  .home .text-three{
-    font-size: 35px;
-  }
   .contact .contact-details{
     align-items: center;
     justify-content: center;
@@ -413,9 +319,6 @@ section .button button:hover{
     margin: 20px 0;
     width: 100%;
   }
-  .contact .text{
-    width: 100%;
-}
 }
 
 @media (max-width: 500px){
