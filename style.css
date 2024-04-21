@@ -18,6 +18,239 @@
     transition: all 0.3s ease;
 }
 
+/* navbar styling */
+nav{
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #6B3CC9;
+}
+nav.sticky{
+  background: #6B3CC9;
+  padding: 15px 0;
+}
+nav .navbar{
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+nav .navbar .menu{
+  display: flex;
+  position: relative;
+}
+nav .navbar .menu li{
+  list-style: none;
+  margin: 0 8px;
+}
+.navbar .menu a{
+  font-size: 18px;
+  font-weight: 500;
+  color: #FFF;
+  padding: 6px 0;
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+.navbar .menu a:hover{
+  color: #000000;
+}
+
+/* Side Navigation Menu Button CSS */
+nav .menu-btn,
+.navbar .menu .cancel-btn{
+  position: absolute;
+  color: #000000;
+  right: 30px;
+  top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+nav .menu-btn{
+  color: #ffffff;
+}
+
+/* home section styling */
+.home{
+  height: 100vh;
+  width: 100%;
+  background: url("images/background.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+.home .home-content{
+  position: absolute;
+  width: 30%;
+  height: fit-content;
+  bottom: 10%;
+  left: 10%;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(to right, #1CBDDD, #4DCA79);
+  color: #FFF;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 10px;
+}
+.home .button{
+  margin: 14px 0;
+}
+.home .button button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #F28D35;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+.home .button button:hover{
+  border-color: #4070f4;
+  background-color: #fff;
+  color: #4070f4;
+}
+
+section .content{
+  width: 80%;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+}
+.about .about-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .title span{
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+section .title span::after{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about .about-details .left{
+  width: 45%;
+}
+.about .left img{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.about-details .right{
+  width: 55%;
+}
+section  .topic{
+  color: #0E2431;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.about-details .right p{
+  text-align: justify;
+  color: #0E2431;
+}
+section .button{
+  margin: 16px 0;
+}
+section .button button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #F28D35;
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+section .button button:hover{
+  border-color: #4070f4;
+  background-color: #fff;
+  color: #4070f4;
+}
+
+.quiz-text h1 {
+  color: #6B3CC9;
+  font-weight: 600;
+  font-size: 27px;
+  font-family: 'poppins';
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y)* -1);
+  margin-right: calc(var(--bs-gutter-x)* -.5);
+  margin-left: calc(var(--bs-gutter-x)* -.5);
+}
+.quiz-btn {
+  width: 100%;
+  font-weight: 500;
+  font-size: 22px;  
+  border: 0px solid #FAF8FF !important;
+  border-radius: 7px 7px 0 0 !important;
+  text-align: left;
+}
+/* footer CSS */
+.site-footer
+{
+  background-color:#6B3CC9;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#ffffff;
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.footer-links li
+{
+  display:block
+}
+.copyright-text
+{
+  margin:0
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  
+}
+.row2{
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
 
 .column {
   flex: 1;
