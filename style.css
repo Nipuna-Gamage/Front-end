@@ -85,12 +85,21 @@ nav .menu-btn{
   font-family: 'Ubuntu', sans-serif;
 }
 .home .home-content{
-  width: 90%;
-  height: 100%;
+  position: absolute;
+  width: 30%;
+  height: fit-content;
+  bottom: 10%;
+  left: 10%;
+  padding: 10px;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-image: linear-gradient(to right, #1CBDDD, #4DCA79);
+  color: #FFF;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 10px;
 }
 .home .button{
   margin: 14px 0;
@@ -179,7 +188,6 @@ section .button button:hover{
   color: #4070f4;
 }
 
-/* My contact CSS */
 
 /* footer CSS */
 .site-footer
@@ -205,7 +213,38 @@ section .button button:hover{
 {
   margin:0
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  
+}
+.row2{
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
 
+
+.column {
+  flex: 1;
+  margin: 0 15px; /* Adjust margin as needed */
+  width: 100%; /* Full width by default */
+  
+}
+.col1 {
+  flex-basis: 50%; /* Take half width */
+}
+
+.col2, .col3 {
+  flex-basis: 20%; /* Take quarter width */
+}
+.list1{
+  list-style: none;
+}
 @media (max-width:991px)
 {
   .site-footer [class^=col-]
@@ -239,6 +278,30 @@ section .button button:hover{
   section .content{
     width: 85%;
   }
+  .home .home-content{
+    width: 40%;
+    height: fit-content;
+    bottom: 10%;
+    left: 10%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to right, #1CBDDD, #4DCA79);
+    color: #FFF;
+    font-size: 25px;
+    text-align: center;
+    
+  }
+  .col1 {
+    flex-basis: 100%; /* Take full width */
+    margin: 10px 0; /* Adjust margin as needed */
+  }
+  .col2, .col3 {
+    flex-basis: 40%; /* Half width */
+    margin: 10px 5px; /* Adjust margin as needed */
+  }
 }
 @media (max-width: 1000px) {
   .about .about-details{
@@ -258,11 +321,43 @@ section .button button:hover{
     margin: 20px 0;
     width: calc(100% / 2 - 20px);
   }
+  .home .home-content{
+    width: 40%;
+    height: fit-content;
+    bottom: 10%;
+    left: 10%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to right, #1CBDDD, #4DCA79);
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+    
+  }
 }
 @media (max-width: 900px) {
   .about .left img{
     height: 350px;
     width: 350px;
+  }
+  .home .home-content{
+    width: 50%;
+    height: fit-content;
+    bottom: 10%;
+    left: 10%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to right, #1CBDDD, #4DCA79);
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+    
   }
 }
 
@@ -319,6 +414,22 @@ section .button button:hover{
     margin: 20px 0;
     width: 100%;
   }
+  .home .home-content{
+    width: 100%;
+    height: fit-content;
+    bottom: 0;
+    left: 0%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to right, #1CBDDD, #4DCA79);
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+    
+  }
 }
 
 @media (max-width: 500px){
@@ -331,5 +442,25 @@ section .button button:hover{
   .contact-details .boxes .per{
     font-size: 50px;
     color: #4070f4;
+  }
+  .home .home-content{
+    width: 100%;
+    height: fit-content;
+    bottom: 0;
+    left: 0%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to right, #1CBDDD, #4DCA79);
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+    
+  }
+  .column {
+    flex-basis: 100%; /* Take full width */
+    margin: 10px 0; /* Adjust margin as needed */
   }
 }
