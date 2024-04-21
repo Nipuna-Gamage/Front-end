@@ -32,7 +32,7 @@ nav{
   z-index: 998;
   transition: all 0.3s ease;
   font-family: 'Ubuntu', sans-serif;
-  background-color : #6B3CC9;
+  background-color: #6B3CC9;
 }
 nav.sticky{
   background: #6B3CC9;
@@ -44,14 +44,6 @@ nav .navbar{
   justify-content: space-between;
   align-items: center;
   margin: auto;
-}
-nav .navbar .logo a{
-  font-weight: 500;
-  font-size: 35px;
-  color: #4070f4;
-}
-nav.sticky .navbar .logo a{
-  color: #fff;
 }
 nav .navbar .menu{
   display: flex;
@@ -69,21 +61,7 @@ nav .navbar .menu li{
   transition: all 0.4s ease;
 }
 .navbar .menu a:hover{
-  color: #4070f4;
-}
-nav.sticky .menu a{
-  color: #FFF;
-}
-nav.sticky .menu a:hover{
-  color: #0E2431;
-}
-.navbar .media-icons a{
-  color: #4070f4;
-  font-size: 18px;
-  margin: 0 6px;
-}
-nav.sticky .media-icons a{
-  color: #FFF;
+  color: #000000;
 }
 
 /* Side Navigation Menu Button CSS */
@@ -99,13 +77,7 @@ nav .menu-btn,
   display: none;
 }
 nav .menu-btn{
-  color: #4070f4;
-}
-nav.sticky .menu-btn{
-  color: #FFF;
-}
-.navbar .menu .menu-btn{
-  color: #fff;
+  color: #ffffff;
 }
 
 /* home section styling */
@@ -389,7 +361,6 @@ section .button button:hover{
   }
   nav .navbar .menu{
     position: fixed;
-    left: -100%;
     top: 0;
     background: #FFF;
     height: 100vh;
@@ -397,7 +368,6 @@ section .button button:hover{
     width: 100%;
     padding-top: 60px;
     flex-direction: column;
-    align-items: center;
     transition: all 0.5s ease;
   }
   .navbar.active .menu{
