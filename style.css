@@ -32,6 +32,7 @@ nav{
   z-index: 998;
   transition: all 0.3s ease;
   font-family: 'Ubuntu', sans-serif;
+  background-color : #6B3CC9;
 }
 nav.sticky{
   background: #6B3CC9;
