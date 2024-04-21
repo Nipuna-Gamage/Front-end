@@ -394,9 +394,9 @@ section .button button:hover{
     top: 0;
     background: #FFF;
     height: 100vh;
-    max-width: 400px;
+    max-width: 500px;
     width: 100%;
-    padding-top: 60px;
+    padding-top: 70px;
     flex-direction: column;
     transition: all 0.5s ease;
   }
