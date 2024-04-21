@@ -53,6 +53,7 @@ nav .navbar .menu li{
   color: #FFF;
   padding: 6px 0;
   transition: all 0.4s ease;
+  text-decoration: none;
 }
 .navbar .menu a:hover{
   color: #000000;
@@ -188,7 +189,29 @@ section .button button:hover{
   color: #4070f4;
 }
 
-
+.quiz-text h1 {
+  color: #6B3CC9;
+  font-weight: 600;
+  font-size: 27px;
+  font-family: 'poppins';
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y)* -1);
+  margin-right: calc(var(--bs-gutter-x)* -.5);
+  margin-left: calc(var(--bs-gutter-x)* -.5);
+}
+.quiz-btn {
+  width: 100%;
+  font-weight: 500;
+  font-size: 22px;  
+  border: 0px solid #FAF8FF !important;
+  border-radius: 7px 7px 0 0 !important;
+  text-align: left;
+}
 /* footer CSS */
 .site-footer
 {
@@ -462,5 +485,14 @@ section .button button:hover{
   .column {
     flex-basis: 100%; /* Take full width */
     margin: 10px 0; /* Adjust margin as needed */
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-box2 {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    flex: unset;
   }
 }
